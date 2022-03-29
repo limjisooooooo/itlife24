@@ -1,0 +1,28 @@
+.page{
+    padding: 2% 5%;    
+}
+table {    
+    width: 100%;    
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 2vw 0 2vw 0;
+}
+thead{
+    background-color: lightgray;        
+}
+th, td{
+    border: 1px solid #000;
+    height: 3vw;
+}
+.text-Area{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;    
+    text-align: center;
+    resize: none;
+    vertical-align: middle;
+}
+.text-Area:focus{
+      outline: none;      
+}
