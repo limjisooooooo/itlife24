@@ -5,18 +5,28 @@ interface RadioProps{
     radios: {'value':string, 'text': string}[];
 }
 const Radio = (props: RadioProps) => {
+    const checkedRadio = React.useRef<Element|null>(null);
+    const onClick = (e: React.MouseEvent<HTMLLabelElement, MouseEvent>) => {
+        if(checkedRadio.current){
+            checkedRadio.current.setAttribute("checked", "false");
+        }
+        e.currentTarget.firstElementChild?.setAttribute("checked", "true");
+        checkedRadio.current = e.currentTarget.firstElementChild
+    }    
     const makeRadio = () => {
         return props.radios.map((radio: any, idx) =>
-                <div className='radio' key={idx}>
-                    <input type="radio" name={props.name} value={radio.value}/>
-                    <label htmlFor={radio.value}>{radio.text}</label>
-                </div>
+        <label htmlFor={radio.value} onClick={(e) => onClick(e)}>
+            <input type="radio" name={props.name} value={radio.value}/>
+            <span className='radio' key={idx}>
+                {radio.text}
+            </span>
+        </label>
         )        
     }
     return(
-        <>
+        <div className='radiogroup'>
             {makeRadio()}
-        </>
+        </div>
     )
 }
 export default React.memo(Radio)

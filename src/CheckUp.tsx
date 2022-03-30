@@ -83,14 +83,14 @@ const CheckUp = () => {
             </table>            
             <table>
                 <colgroup>
-                    <col width={'5%'}/>
+                    <col width={'8%'}/>
                     <col width={'10%'}/>
-                    <col width={'5%'}/>
+                    <col width={'8%'}/>
                     <col width={'10%'}/>
-                    <col width={'5%'}/>
+                    <col width={'8%'}/>
                     <col width={'10%'}/>
                     <col width={'10%'}/>
-                    <col width={'25%'}/>
+                    <col width={'16%'}/>
                 </colgroup>
                 <thead>
                     <tr>
@@ -181,8 +181,8 @@ const CheckUp = () => {
             </table>             
             <table>
                 <colgroup>
-                    <col width={'10%'}/>
-                    <col width={'40%'}/>
+                    <col width={'15%'}/>
+                    <col width={'35%'}/>
                     <col width={'10%'}/>
                     <col width={'40%'}/>                    
                 </colgroup>
