@@ -1,0 +1,43 @@
+.pallete{
+    display:flex;
+    width: 100%;
+    height: 2vw;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+.color_black{
+    background-color: black;
+    height:100%;
+    flex:1;
+}
+.color_gray{
+    background-color: darkgray;
+    height:100%;
+    flex:1;
+}
+.color_red{
+    background-color: #FF6C6C;
+    height:100%;
+    flex:1;
+}
+.color_green{
+    background-color: #86E57F;
+    height:100%;
+    flex:1;
+}
+.color_blue{
+    background-color: #489CFF;
+    height:100%;
+    flex:1;
+}
+.color_yellow{
+    background-color: #FFFF90;
+    height:100%;
+    flex:1;
+}
+.color_white{
+    background-color: white;
+    height:100%;
+    flex:1;
+}

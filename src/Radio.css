@@ -1,0 +1,22 @@
+input[type='radio']{
+    height: 0;
+    width: 0;
+}
+.radio{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 .2vw;
+    cursor: pointer;
+}
+.radio::before{
+    content: "";
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    border: 1px solid #000;   
+    margin: 0 0.2vw;
+    vertical-align: top;
+}
+label{
+    cursor: pointer;
+}
