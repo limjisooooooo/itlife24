@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { isPropertySignature } from 'typescript'
 import './Pallete.css'
 interface PalleteProps{
     onClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void

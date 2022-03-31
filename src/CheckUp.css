@@ -1,6 +1,30 @@
 .page{
     padding: 2% 5%;    
 }
+.daterow{
+    display: flex;
+    padding: 1vw 0;
+    border-bottom: .2vw solid midnightblue;
+}
+.logo{
+    flex:9
+}
+.logo + input[type='date']{
+    flex:1
+}
+.titleRow{
+    display: flex;
+}
+.title{    
+    flex: 8;
+    font-size: 2vw;
+    font-weight: bold;    
+    color:midnightblue;
+    text-align: left;
+}
+.clientInfo{
+    flex:2;
+}
 table {    
     width: 100%;    
     border-spacing: 0;

@@ -1,0 +1,11 @@
+canvas{
+    border: 0.1em solid #000; 
+    width:100%; 
+    margin:5% 0 1%;
+}
+.pallete{
+    display: none;   
+}
+.canvas:hover>.pallete{
+    display: flex;
+}

@@ -1,6 +1,8 @@
 import { url } from 'inspector';
 import * as React from 'react'
 import Pallete from './Pallete';
+import './CheckImg.css';
+
 const CheckImg = () => {
     const painting = React.useRef(false);
     const canvas = React.useRef<HTMLCanvasElement>(null);        
@@ -19,7 +21,7 @@ const CheckImg = () => {
     },[])
     React.useEffect(() => {
         const image = new Image();
-        image.src="/img/notebook.png";
+        image.src=require("./img/notebook.png");
         image.onload = () => {
             ctx.current = canvas.current!.getContext("2d");
             canvas.current!.width = parseInt(getComputedStyle(canvas.current!).getPropertyValue('width'));
@@ -32,14 +34,14 @@ const CheckImg = () => {
     },[])        
 
     return (
-        <>                        
-            <canvas ref={canvas} style={{border: "0.1em solid #000", width:"100%", margin:"5% 0 1%"}} 
+        <div className='canvas'>                        
+            <canvas ref={canvas} 
                 onMouseDown={() => {painting.current = true}} 
                 onMouseMove={(e) => {onMouseMove(e)}} 
                 onMouseUp={() => {painting.current = false}} 
                 onMouseLeave={() => {painting.current = false}}/>        
             <Pallete onClick={palleteClick}/>                    
-        </>
+        </div>
     )
 }
 export default React.memo(CheckImg)
